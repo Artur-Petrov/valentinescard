@@ -50,7 +50,7 @@ export const ValentineCard = () => {
 
     return (
         <div className='card-container bg-pink-500 flex items-center justify-center'>
-            <div className='.text-container bg-white p-20 rounded-xl'>
+            <div className='text-container bg-white p-20 rounded-xl'>
                 {!accepted ? (
                     <>
                     <h2 className='text-xl font-bold text-pink-400'>Will you be my valentine?❤️</h2>
