@@ -1,13 +1,14 @@
 import {useEffect, useState} from "react";
 import './Card.css'
 import confetti from 'canvas-confetti';
+import type {IPosition} from "../models/IPosition.ts";
 
 export const ValentineCard = () => {
     const [accepted, setAccepted] = useState<boolean>(false)
-    const [noBtnPos, setNoBtnPos] = useState({x: 0, y: 0})
+    const [noBtnPos, setNoBtnPos] = useState<IPosition>({x: 0, y: 0})
     const [isMoved, setIsMoved] = useState<boolean>(false)
 
-    const moveBtn= () =>{
+    const moveBtn= (): void =>{
         let newX = 0;
         let newY = 0;
         const minDistance = 150;
@@ -30,7 +31,7 @@ export const ValentineCard = () => {
 
             const randomInRange = (min: number, max: number) => Math.random() * (max - min) + min;
 
-            const interval: any = setInterval(function() {
+            const interval: ReturnType<typeof setInterval> = setInterval(function() {
                 const timeLeft = animationEnd - Date.now();
 
                 if (timeLeft <= 0) {
