@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  // base має збігатися з назвою репозиторію на GitHub
-  base: '/назва-репозиторію/',
+
+  base: '/valentinescard/',
 })
