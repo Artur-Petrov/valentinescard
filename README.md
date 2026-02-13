@@ -23,3 +23,4 @@ A modern, interactive web application built to demonstrate core frontend develop
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/artur-petrov/valentinescard.git](https://github.com/artur-petrov/valentinescard.git)
+npm install
