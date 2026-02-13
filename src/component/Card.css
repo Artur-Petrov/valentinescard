@@ -1,0 +1,21 @@
+@import "tailwindcss";
+.card-container{
+    height: 100vh;
+    overflow: hidden;
+}
+.text-container{
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35); /* indigo glow */
+}
+.no-btn{
+    cursor: pointer;
+}
+.yes-btn {
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.yes-btn:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
